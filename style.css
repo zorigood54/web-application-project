@@ -1,0 +1,23 @@
+body{
+  background-color: gray;
+}
+
+header{
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+
+main{
+  display: block;
+  width: 100%;
+  height: 550px;
+  background: white;
+}
+footer{
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+}
