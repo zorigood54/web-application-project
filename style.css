@@ -1,23 +1,42 @@
 body{
+  display: flex;
+  flex-direction: column;
   background-color: gray;
+  margin: 0px 0px;
+}
+* {
+  box-sizing: border-box;
 }
 
 header{
-  display: block;
-  width: 100%;
-  height: 100px;
-  background-color: black;
+  width: 100vw;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px
+}
+
+#login-btn{
+  height: clamp(30px, 5vh, 50px);
+  width: clamp(80px, 5vw, 150px);
+  cursor: pointer;
 }
 
 main{
-  display: block;
-  width: 100%;
-  height: 550px;
+  width: 100vw;
+  height: 100vh;
   background: white;
 }
+
+nav{
+  background-color: yellow;
+  width: 100vw;
+  height: 40vh;
+}
 footer{
-  display: block;
-  width: 100%;
-  height: 100px;
+  width: 100vw;
+  height: 15vh;
   background-color: blue;
 }
