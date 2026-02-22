@@ -1,7 +1,7 @@
 body{
   display: flex;
   flex-direction: column;
-  background-color: gray;
+  background-color: #f9fafb;
   margin: 0;
   min-height: 100vh;
 }
@@ -11,7 +11,7 @@ body{
 
 header{
   height: 10vh;
-  background-color: white;
+  background-color: #2563eb;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,8 +30,19 @@ main{
 }
 
 nav{
-  background-color: yellow;
+  background-color: black;
   height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5vw;
+  padding-top: 10vh;
+}
+#search-bar{
+  background-color: #d9d9d9;
+  width: 24vw;
+  height: 8vh;
+  border-radius: 15px;
 }
 option{
   display: flex;
@@ -41,12 +52,29 @@ option{
   height: 40vh;
 }
 section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
   height: 30vh;
   width: 20vw;
-  background-color: gray;
+  background-color: #d9d9d9;
+}
+#image{
+    border-radius: 50%;
+    height: 12vh;
+    width:  7vw;  
+    background-color: black;
+    margin-top: 15px;
+}
+#option-btn{
+    width: 4vw;
+    height: 5vh;
+    margin-bottom: 2vh;
 }
 
 footer{
   height: 15vh;
-  background-color: blue;
+  background-color: #2563eb;
 }
