@@ -18,7 +18,7 @@ body {
 /* HEADER */
 header {
   height: 70px;
-  background-color: #2563eb;
+  background-color: #f9fafb;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,9 +26,10 @@ header {
 }
 
 header a{
-  color: white;
+  color: black;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 header img {
   width: 75px;
@@ -44,7 +45,8 @@ header img {
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
-  background-color: white;
+  background-color: #2563eb;
+  color: white;
   font-weight: bold;
   border: none;
 }
@@ -105,12 +107,12 @@ aside h2{
 }
 
 .ad {
-  background-color: #d9d9d9;
+  background-color: #f9fafb;
   width: 400px;
-  height: 350px;
+  height: auto;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0px 4px 5px 2px gray;
+  box-shadow: 0px 5px 5px 0px gray;
 }
 
 .ad img {
@@ -123,11 +125,20 @@ aside h2{
 
 .info{
   display: grid;
-  padding: 0 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px 20px;
 }
-#price{
+.price{
+  grid-column: span 2;
   font-size: 2rem;
   font-weight: bolder;
+}
+.address{
+  grid-column: span 2;
+}
+.room, .area{
+  font-size: 1.25rem;
 }
 
 /* OPTIONS */
@@ -145,32 +156,35 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: 10px;
   border-radius: 15px;
   height: 350px;
   width: 300px;
-  background-color: #d9d9d9;
-  padding: 30px 0 20px 0;
-  box-shadow: 0px 4px 5px 2px gray;
+  background-color: #f9fafb;
+  padding: 30px 20px;
+  box-shadow: 0px 5px 5px 0px gray;
 }
 section h2{
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }
 section h3{
   font-size: 1rem;
   font-weight: 100;
+  text-align: center;
 }
 
 .image {
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   background-color: black;
 }
 
 .option-btn {
   font-size: 1rem;
+  margin-top: 30px;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 10px;
